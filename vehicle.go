@@ -140,3 +140,9 @@ func generateRating() {
 
 	}
 }
+
+func showRating(model string)  {
+	ratingFound := false
+
+
+}
