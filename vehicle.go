@@ -135,14 +135,13 @@ func generateRating() {
 
 			}
 
-
 		}
-		vehicleResult[v.Name] =  vehResult
+		vehicleResult[v.Name] = vehResult
 
 	}
 }
 
-func showRating(model string)  {
+func showRating(model string) {
 	ratingFound := false
 	for m, r := range vehicleResult {
 		if m == model {
@@ -155,6 +154,10 @@ func showRating(model string)  {
 		fmt.Printf("No rating for this vehicle")
 	}
 
+}
 
+func (c *car) carDetails() {
+	fmt.Printf("\n%-5v: %-8v: %-12v ", "Car", c.make, c.model)
+	showRating(c.model)
 
 }
