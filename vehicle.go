@@ -11,7 +11,7 @@ type car struct {
 type truck struct {
 	model       string
 	make        string
-	TypeVehicle string
+	typeVehicle string
 }
 
 type bike struct {
